@@ -1,0 +1,138 @@
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\Tile.xnb
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileEnemy.xnb
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileStart.xnb
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileWall.xnb
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.exe
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csprojAssemblyReference.cache
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CopyComplete
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.exe
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\Henrik\source\repos\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\info.xnb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\info.xnb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\Tile.xnb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileEnemy.xnb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileStart.xnb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileWall.xnb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.exe
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csprojAssemblyReference.cache
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CopyComplete
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.exe
+C:\Users\admin\Downloads\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\info.xnb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\Tile.xnb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileEnemy.xnb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileStart.xnb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileWall.xnb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.exe
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csprojAssemblyReference.cache
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CopyComplete
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.exe
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\Henrik\Desktop\AStarMonoGameTest\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TilePath.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\info.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\Tile.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileEnemy.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TilePath.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileStart.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileWall.xnb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.exe
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csprojAssemblyReference.cache
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CopyComplete
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.exe
+C:\Users\emmaj\OneDrive\Dokumenter\Datamatiker EADania\Virksomhed, UP og algoritmer\Projekt\AStarMonoGameTestThatWorks\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\info.xnb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\Tile.xnb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileEnemy.xnb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TilePath.xnb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileStart.xnb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\Content\TileWall.xnb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.exe
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csprojAssemblyReference.cache
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CopyComplete
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.exe
+C:\Users\admin\Documents\GitHub\UP\AStarMonoGameTest\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.pdb
