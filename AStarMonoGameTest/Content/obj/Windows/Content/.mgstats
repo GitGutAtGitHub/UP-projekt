@@ -1,1 +1,7 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/info.spritefont","C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/info.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21521,0,4163976
+"C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Tile.png","C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/Tile.xnb","TextureProcessor","Texture2DContent",1664,4181,0,2753166
+"C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileEnemy.png","C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileEnemy.xnb","TextureProcessor","Texture2DContent",2594,4181,0
+"C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png","C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TilePath.xnb","TextureProcessor","Texture2DContent",3010,4181,0,0156263
+"C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png","C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileStart.xnb","TextureProcessor","Texture2DContent",1936,4181,0,0156232
+"C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png","C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileWall.xnb","TextureProcessor","Texture2DContent",1989,4181,0

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/TileWall.png</SourceFile>
-  <SourceTime>2020-03-13T13:12:47.0297041+01:00</SourceTime>
-  <DestFile>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/bin/Windows/Content/TileWall.xnb</DestFile>
-  <DestTime>2020-03-13T13:24:52.0319412+01:00</DestTime>
+  <SourceFile>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png</SourceFile>
+  <SourceTime>2020-03-16T12:45:19.1065996+01:00</SourceTime>
+  <DestFile>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileWall.xnb</DestFile>
+  <DestTime>2020-03-16T13:10:22.9067165+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

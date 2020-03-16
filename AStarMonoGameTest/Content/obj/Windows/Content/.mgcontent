@@ -4,12 +4,12 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/info.spritefont</File>
-    <File>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/Tile.png</File>
-    <File>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/TileEnemy.png</File>
-    <File>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/TilePath.png</File>
-    <File>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/TileStart.png</File>
-    <File>C:/Users/admin/Documents/GitHub/UP/AStarMonoGameTest/AStarMonoGameTest/Content/TileWall.png</File>
+    <File>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/info.spritefont</File>
+    <File>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Tile.png</File>
+    <File>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileEnemy.png</File>
+    <File>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png</File>
+    <File>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png</File>
+    <File>C:/Users/emmaj/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
