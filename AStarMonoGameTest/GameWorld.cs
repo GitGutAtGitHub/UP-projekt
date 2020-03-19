@@ -11,14 +11,36 @@ namespace AStarMonoGameTest
     /// </summary>
     public class GameWorld : Game
     {
+        public static MouseHandler mouseHandler;
+
+        #region Lists
+        public static List<GameObject> GameObjects { get => gameObjects; set => gameObjects = value; }
+        private static List<GameObject> newObjects = new List<GameObject>();
+        private static List<GameObject> deleteObjects = new List<GameObject>();
         private static List<GameObject> gameObjects = new List<GameObject>();
+        #endregion
+
+        #region Fields
         public static float scale = 3f;
         public static float cellSize = 32 * scale;
+
         public static int cellRowCount = 10;
-        private GridManager grid;
+        private static int wave = 1;
+        private static int waveCounter;
+
+        private static Stack<Node> path;
+
+        private static GridManager gridManager;
+
+        private static TimeSpan timer;
+
+        private static bool startWave;
+        #endregion
+
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
 
         public GameWorld()
         {
@@ -34,17 +56,18 @@ namespace AStarMonoGameTest
         /// </summary>
         protected override void Initialize()
         {
-            graphics.PreferredBackBufferWidth = 1000;
+            graphics.PreferredBackBufferWidth = 1500;
             graphics.PreferredBackBufferHeight = 1000;
-     
+            timer = new TimeSpan(0, 0, 0, 0, 0);
             graphics.ApplyChanges();
 
             IsMouseVisible = true;
+            mouseHandler = new MouseHandler();
 
-            grid = new GridManager(cellRowCount, cellSize);
 
-            gameObjects.AddRange(grid.CreateGrid());
-           
+            gridManager = new GridManager(cellRowCount, cellSize);
+
+            GameObjects.AddRange(gridManager.CreateGrid());
 
             // TODO: Add your initialization logic here
 
@@ -57,41 +80,17 @@ namespace AStarMonoGameTest
         /// </summary>
         protected override void LoadContent()
         {
-            Enemy e = new Enemy(new Vector2(0, 0));
-
-            gameObjects.Add(e);
-
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Asset.LoadContent(Content);
 
-            foreach (GameObject gO in gameObjects)
+            GameObjects.Add(new UI(Asset.wall, new Vector2(11 * 96, 1 * 96)));
+
+
+            foreach (GameObject gO in GameObjects)
             {
                 gO.LoadContent(Content);
             }
-            Node tmpStart = new Node(new Vector2(5,5),NodeType.Empty,true);
-            Node tmpGoal = new Node(new Vector2(9, 9), NodeType.Empty, true);
-
-            /*
-            foreach (GameObject nO in gameObjects)
-            {
-                if (nO.type == NodeType.Start)
-                {
-                    tmpStart = nO as Node;
-                }
-                else if (nO.type == NodeType.Goal)
-                {
-                    tmpGoal = nO as Node;
-                }
-            }
-            */
-            
-            
-
-             e.Path = grid.FindPath(grid.Nodes[0, 0], grid.Nodes[9, 9]);
-            
-    
-           // grid.FindPath(grid.Nodes[0, 0], grid.Nodes[9, 9]);
 
             // TODO: use this.Content to load your game content here
         }
@@ -115,9 +114,40 @@ namespace AStarMonoGameTest
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            foreach (GameObject gO in gameObjects)
+            mouseHandler.Update();
+
+            GameObjects.AddRange(newObjects);
+            newObjects.Clear();
+            deleteObjects.Clear();
+
+            if (Keyboard.HasBeenPressed(Keys.S))
+            {
+                startWave = true;
+            }
+
+            if (startWave == true)
+            {
+                //the timer starts "running"
+                timer -= gameTime.ElapsedGameTime;
+                if (timer <= TimeSpan.Zero)
+                {
+                    //once the timer hits zero, its runs the startsWave method
+                    //and resets the timer
+                    timer = new TimeSpan(0, 0, 0, 0, 500);
+                    StartWave(gameTime);
+
+                }
+            }
+
+            foreach (GameObject gO in GameObjects)
             {
                 gO.Update(gameTime);
+            }
+
+            foreach (GameObject gO in deleteObjects)
+            {
+                GameObjects.Remove(gO);
+
             }
 
             // TODO: Add your update logic here
@@ -134,9 +164,9 @@ namespace AStarMonoGameTest
             GraphicsDevice.Clear(Color.White);
 
             spriteBatch.Begin();
-            foreach (GameObject gO in gameObjects)
+            foreach (GameObject gO in GameObjects)
             {
-                
+                spriteBatch.DrawString(Asset.spriteFont, $"Wave: {wave}", new Vector2(11 * 96, 0 * 96), Color.DarkRed, 0, Vector2.Zero, 5, SpriteEffects.None, 0.92f);
                 gO.Draw(spriteBatch);
             }
             spriteBatch.End();
@@ -144,6 +174,47 @@ namespace AStarMonoGameTest
 
             base.Draw(gameTime);
         }
-        
+
+        public static void StartWave(GameTime gameTime)
+        {
+            //hvor mange enemies der er allerede tilføjet i den nuværende wave
+            waveCounter++;
+
+            //laver en sti til enemies
+            path = gridManager.FindPath(gridManager.Nodes[0, 5], gridManager.Nodes[9, 5]);
+
+            //så længe antallet af enemies ikke overstiger wave counter
+            if (waveCounter <= wave)
+            {
+                newObjects.Add(new Enemy(new Vector2(0 * 96, 5 * 96), path));
+
+            }
+            else
+            {
+                //if the number of enemies equals the wavenumber
+                wave++;
+
+                //resets the counter
+                waveCounter = 0;
+
+                //stops the Startwave function from running
+                startWave = false;
+
+                //resets the timer
+                timer = new TimeSpan(0, 0, 0, 0, 0);
+            }
+
+
+        }
+
+        public static void Instantiate(GameObject gO)
+        {
+            newObjects.Add(gO);
+        }
+
+        public static void Destroy(GameObject gO)
+        {
+            deleteObjects.Add(gO);
+        }
     }
 }

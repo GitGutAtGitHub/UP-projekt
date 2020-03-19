@@ -164,3 +164,4 @@ C:\Users\emmaj\Documents\GitHub\UP-projekt\AStarMonoGameTest\obj\x86\Debug\AStar
 C:\Users\emmaj\Documents\GitHub\UP-projekt\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CopyComplete
 C:\Users\emmaj\Documents\GitHub\UP-projekt\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.exe
 C:\Users\emmaj\Documents\GitHub\UP-projekt\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.pdb
+C:\Users\emmaj\Documents\GitHub\UP-projekt\AStarMonoGameTest\obj\x86\Debug\AStarMonoGameTest.csproj.CoreCompileInputs.cache

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +11,31 @@ namespace AStarMonoGameTest
 {
 	class GridManager
 	{
-		private int cellRowCount;
-		private float cellSize;
+		#region Fields
 		private List<Node> grid;
-		private  Node[,] nodes = new Node[10, 10];
 
-		public  Node[,] Nodes { get => nodes;}
+		private Node[,] nodes = new Node[10, 10];
+
+		private static TowerType clickType;
+		private static bool towerPicked;
+
+		private int cellRowCount;
+
+		private float cellSize;
+		#endregion
+
+
+		public Node[,] Nodes { get => nodes; }
+		public static TowerType ClickType { get => clickType; set => clickType = value; }
+		public static bool TowerPicked { get => towerPicked; set => towerPicked = value; }
 
 		public GridManager(int cellRowCount, float cellSize)
 		{
 			this.cellRowCount = cellRowCount;
 			this.cellSize = cellSize;
+			GameWorld.mouseHandler.leftClickEvent += PlaceTower;
 		}
+
 
 		public List<Node> CreateGrid()
 		{
@@ -32,40 +46,53 @@ namespace AStarMonoGameTest
 				{
 					NodeType type;
 					bool walkable;
-					if (x == 0 && y == 0)
+					if (x == 0 && y == 5)
 					{
-						type = NodeType.Start;
+						type = NodeType.START;
 						walkable = true;
 					}
-					else if (x == 9 && y == 9)
+					else if (x == 9 && y == 5)
 					{
-						type = NodeType.Goal;
+						type = NodeType.GOAL;
 						walkable = true;
 					}
 
-					else if (x == 7 && (y == 4 || y == 5 || y == 6 || y == 7 || y == 8 || y == 9))
+					else if (x == 9 && (y >= 0) && y != 5)
 					{
-						type = NodeType.Tower;
+						type = NodeType.TOWER;
 						walkable = false;
 					}
 
-					else if (x == 3 && (y == 0 ||y == 1 || y == 2 || y == 3 || y == 4 || y == 5))
+					else if (x == 0 && (y >= 0) && y != 5)
 					{
-						type = NodeType.Tower;
+						type = NodeType.TOWER;
+						walkable = false;
+					}
+
+					else if (y == 0 && (x >= 0))
+					{
+						type = NodeType.TOWER;
+						walkable = false;
+					}
+
+					else if (y == 9 && (x >= 0))
+					{
+						type = NodeType.TOWER;
 						walkable = false;
 					}
 					else
 					{
-						type = NodeType.Empty;
+						type = NodeType.EMPTY;
 						walkable = true;
 					}
 
-					Node tmp = new Node(new Vector2(x * cellSize, y * cellSize), type, walkable);
+					Node tmp = new Node(new Vector2(x * cellSize, y * cellSize), type, walkable, false);
 
 					grid.Add(tmp);
 					Nodes[x, y] = tmp;
 				}
 			}
+
 			return grid;
 		}
 
@@ -94,6 +121,7 @@ namespace AStarMonoGameTest
 				return 14 * dstX + 10 * (dstY - dstX);
 			}
 		}
+
 		private List<Node> GetNeighbours(Node node)
 		{
 			List<Node> neighbours = new List<Node>();
@@ -124,6 +152,7 @@ namespace AStarMonoGameTest
 					}
 				}
 			}
+
 			return neighbours;
 		}
 
@@ -138,15 +167,14 @@ namespace AStarMonoGameTest
 			//så længe man ikke er nået til starten
 			while (currentNode != startNode)
 			{
-				
+
 				if (currentNode != endNode)
 				{
 					currentNode.Sprite = Asset.pathSprite;
 				}
-			
+
 				//tilføjer den nuværende node til Sti listen
 				path.Push(currentNode);
-
 
 				//sætter den nuværende node til at være lig med den nuværende nodes Parent node. Dvs den næste i stien
 				currentNode = currentNode.Parent;
@@ -192,9 +220,7 @@ namespace AStarMonoGameTest
 				//hvis den har fundet den rigtige celle, så skal den trace vejen tilbage til start cellen
 				if (currentNode == targetNode)
 				{
-					
 					pathStack = RetracePath(startNode, targetNode);
-					
 				}
 
 				foreach (Node neighbour in GetNeighbours(currentNode))
@@ -232,6 +258,53 @@ namespace AStarMonoGameTest
 			}
 
 			return pathStack;
+		}
+
+		public void PlaceTower()
+		{
+			Point tmpPoint = GameWorld.mouseHandler.Point;
+
+
+			if (tmpPoint.X < 9 && tmpPoint.X > 0 && tmpPoint.Y < 9 && tmpPoint.Y > 0 && tmpPoint != new Point(1, 5) && tmpPoint != new Point(8, 5) && towerPicked == true)
+			{
+
+				foreach (Node node in Nodes)
+				{
+
+					if (node.NodeRectangle.Intersects(new Rectangle(tmpPoint, new Point(1, 1))))
+					{
+						Node tmp = Nodes[tmpPoint.X, tmpPoint.Y];
+						tmp.walkable = false;
+
+						if (tmp.containsTower == false)
+						{
+							tmp.containsTower = true;
+							Tower placedTower;
+
+							switch (clickType)
+							{
+								case TowerType.H:
+									placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
+									break;
+								case TowerType.A:
+									placedTower = new Tower("Milo", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.start);
+									break;
+								case TowerType.G:
+									placedTower = new Tower("Mikael", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.enemy);
+									break;
+								case TowerType.I:
+									placedTower = new Tower("Fredag's Café", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.pathSprite);
+									break;
+								default:
+									placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
+									break;
+							}
+							GameWorld.GameObjects.Add(placedTower);
+
+						}
+					}
+				}
+			}
 		}
 	}
 }
