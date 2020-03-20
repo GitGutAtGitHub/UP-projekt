@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+
     <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/A.png</File>
     <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/BulletBlue.png</File>
     <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/BulletGreen.png</File>
@@ -20,6 +21,15 @@
     <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png</File>
     <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png</File>
     <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png</File>
+
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/healthbarSprite.png</File>
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/info.spritefont</File>
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Tile.png</File>
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileEnemy.png</File>
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png</File>
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png</File>
+    <File>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png</File>
+
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
@@ -29,6 +39,7 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
+
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
@@ -38,5 +49,6 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
+
   </DestFiles>
 </SourceFileCollection>

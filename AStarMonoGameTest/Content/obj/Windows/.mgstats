@@ -1,2 +1,11 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+
 "C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/DaniaLogo.png","C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/DaniaLogo.xnb","TextureProcessor","Texture2DContent",8733,36949,0,4410522
+
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/healthbarSprite.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/healthbarSprite.xnb","TextureProcessor","Texture2DContent",119,89,0,0787873
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/info.spritefont","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/info.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21521,0,1126731
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Tile.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Tile.xnb","TextureProcessor","Texture2DContent",1664,4181,0,0039889
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileEnemy.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/TileEnemy.xnb","TextureProcessor","Texture2DContent",2594,4181,0,0039892
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/TilePath.xnb","TextureProcessor","Texture2DContent",3010,4181,0,0040255
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/TileStart.xnb","TextureProcessor","Texture2DContent",1936,4181,0,0039894
+"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/TileWall.xnb","TextureProcessor","Texture2DContent",1989,4181,0,0050139

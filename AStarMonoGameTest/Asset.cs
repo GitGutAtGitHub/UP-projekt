@@ -16,18 +16,23 @@ namespace AStarMonoGameTest
         public static Texture2D enemy;
         public static Texture2D pathSprite;
         public static SpriteFont spriteFont;
+
         public static Texture2D hUI;
         public static Texture2D aUI;
         public static Texture2D gUI;
         public static Texture2D iUI;
+
         public static Texture2D bulletRed;
         public static Texture2D bulletBlue;
         public static Texture2D bulletYellow;
         public static Texture2D bulletGreen;
+
         public static Texture2D hTower;
         public static Texture2D aTower;
         public static Texture2D gTower;
         public static Texture2D iTower;
+        
+        public static Texture2D healthbarSprite;
 
 
         public static void LoadContent(ContentManager content)
@@ -53,6 +58,8 @@ namespace AStarMonoGameTest
             aTower = content.Load<Texture2D>("A");
             gTower = content.Load<Texture2D>("G");
             iTower = content.Load<Texture2D>("I");
+
+            healthbarSprite = content.Load<Texture2D>("healthbarSprite");
         }
     }
 }

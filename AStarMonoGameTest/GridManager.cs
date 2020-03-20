@@ -110,14 +110,14 @@ namespace AStarMonoGameTest
 				//formel med ganget op: 14y + 10*(x-y);
 
 				//Y-afstanden er hvor langt den går op, men diagonalt.
-				// Derefter finder man ud af X-afstanden ved trække det laveste tal (denne gang y) fra det højeste (x) for at finde 
-				//hvor langt den resterende x-strækning er. 
+				// Derefter finder man ud af X-afstanden ved trække det laveste tal (denne gang y) fra det højeste (x) for at finde
+				//hvor langt den resterende x-strækning er.
 
 				return 14 * dstY + 10 * (dstX - dstY);
 			}
 			else
 			{
-				//det omvendte hvis y er større. 
+				//det omvendte hvis y er større.
 				return 14 * dstX + 10 * (dstY - dstX);
 			}
 		}
@@ -145,7 +145,7 @@ namespace AStarMonoGameTest
 					//tjekker om det er inden for 10x10 gridet der er "banen"
 					if (checkX >= 0 && checkX < cellRowCount && checkY >= 0 && checkY < cellRowCount)
 					{
-						//naboen tilføjes. 
+						//naboen tilføjes.
 
 						// Der tilføjes til nodeArrayet
 						neighbours.Add(Nodes[checkX, checkY]);
@@ -232,7 +232,7 @@ namespace AStarMonoGameTest
 						continue;
 					}
 
-					//hvis den nye sti til naboen fra de nuværende er kortere end den gamle (nuværende sti), 
+					//hvis den nye sti til naboen fra de nuværende er kortere end den gamle (nuværende sti),
 					//eller naboen ikke er i den åbne liste
 					int newMovementCostToNeighbour = currentNode.GCost + CalculateDistance(currentNode, neighbour);
 
@@ -245,7 +245,7 @@ namespace AStarMonoGameTest
 						//Naboens hCost er lig med afstanden fra naboen til targetNode
 						neighbour.HCost = CalculateDistance(neighbour, targetNode);
 
-						//Sætter naboens parent til den nuværende node den kom fra, så den altid ved hvem den kom fra, når den skal bruge den. 
+						//Sætter naboens parent til den nuværende node den kom fra, så den altid ved hvem den kom fra, når den skal bruge den.
 						neighbour.Parent = currentNode;
 
 						//hvis den nabo ikke er i den åbne liste, så tilføjes den.
@@ -280,6 +280,8 @@ namespace AStarMonoGameTest
 							tmp.containsTower = true;
 							Tower placedTower;
 
+if(GameWorld.resources >= 5)
+{
 							switch (clickType)
 							{
 								case TowerType.H:
@@ -300,6 +302,8 @@ namespace AStarMonoGameTest
 							}
 
 							GameWorld.GameObjects.Add(placedTower);
+						}
+
 						}
 					}
 				}

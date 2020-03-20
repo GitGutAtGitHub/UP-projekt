@@ -13,7 +13,11 @@
 
 #---------------------------------- Content ---------------------------------#
 
+
 #begin A.png
+
+#begin healthbarSprite.png
+
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,6 +27,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+
 /build:A.png
 
 #begin BulletBlue.png
@@ -121,6 +126,9 @@
 /processorParam:TextureFormat=Color
 /build:I.png
 
+/build:healthbarSprite.png
+
+
 #begin info.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
@@ -199,4 +207,3 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:TileWall.png
-

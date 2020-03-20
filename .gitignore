@@ -2,3 +2,6 @@
 *.ide
 *.pdb
 *.cache
+*.ide-wal
+*.ide-shm
+*.exe
