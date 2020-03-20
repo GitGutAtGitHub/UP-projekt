@@ -11,28 +11,33 @@ namespace AStarMonoGameTest
 {
     public abstract class GameObject
     {
-
         #region Fields
-      
+        protected string name;
+
         protected Color tint = Color.White;
 
         protected Texture2D sprite;
 
         protected Vector2 position;
-
         protected Vector2 velocity;
+
         protected float speed;
 
-        public Vector2 Position { get => position; set => position = value; }
-        public  Color Tint { get => tint; set => tint = value; }
-        public Texture2D Sprite { get => sprite; set => sprite = value; }
+        protected int health;
 
-        public virtual Rectangle CollisionBox
+        #endregion
+
+
+        #region Properties
+        public Vector2 Position { get => position; set => position = value; }
+        public Color Tint { get => tint; set => tint = value; }
+        public Texture2D Sprite { get => sprite; set => sprite = value; }
+        public virtual Rectangle UIBounds
         {
             get { return new Rectangle((int)position.X, (int)position.Y, sprite.Width * (int)GameWorld.scale, sprite.Height * (int)GameWorld.scale); }
         }
+        #endregion 
 
-        #endregion
 
         public virtual void LoadContent(ContentManager content)
         {
@@ -48,8 +53,7 @@ namespace AStarMonoGameTest
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-
-            spriteBatch.Draw(Sprite, Position, null, Color.White, 0, new Vector2(0, 0), GameWorld.scale, SpriteEffects.None, 1);
+            spriteBatch.Draw(Sprite, Position, null, Color.White, 0, new Vector2(0, 0), 1, SpriteEffects.None, 1);
         }
     }
 }

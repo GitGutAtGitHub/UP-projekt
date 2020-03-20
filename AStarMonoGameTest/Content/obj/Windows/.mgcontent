@@ -4,15 +4,33 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/healthbarSprite.png</File>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/info.spritefont</File>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/Tile.png</File>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/TileEnemy.png</File>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/TilePath.png</File>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/TileStart.png</File>
-    <File>C:/Users/Henrik/Desktop/ElabortationDoneIfYouDontLookAtTheCursedCodetm/AStarMonoGameTest/AStarMonoGameTest/Content/TileWall.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/A.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/BulletBlue.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/BulletGreen.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/BulletRed.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/BulletYellow.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/DaniaLogo.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/G.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/H.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/I.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/info.spritefont</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Rick.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Tile.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileEnemy.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png</File>
+    <File>C:/Users/User/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
