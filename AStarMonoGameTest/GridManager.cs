@@ -264,14 +264,13 @@ namespace AStarMonoGameTest
 		{
 			Point tmpPoint = GameWorld.mouseHandler.Point;
 
-
 			if (tmpPoint.X < 9 && tmpPoint.X > 0 && tmpPoint.Y < 9 && tmpPoint.Y > 0 && tmpPoint != new Point(1, 5) && tmpPoint != new Point(8, 5) && towerPicked == true)
 			{
 
 				foreach (Node node in Nodes)
 				{
 
-					if (node.NodeRectangle.Intersects(new Rectangle(tmpPoint, new Point(1, 1))))
+					if (node.NodeBounds.Intersects(new Rectangle(tmpPoint, new Point(1, 1))))
 					{
 						Node tmp = Nodes[tmpPoint.X, tmpPoint.Y];
 						tmp.walkable = false;
@@ -284,23 +283,23 @@ namespace AStarMonoGameTest
 							switch (clickType)
 							{
 								case TowerType.H:
-									placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
+									placedTower = new Tower(100, TowerType.H, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.hTower);
 									break;
 								case TowerType.A:
-									placedTower = new Tower("Milo", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.start);
+									placedTower = new Tower(100, TowerType.A, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.aTower);
 									break;
 								case TowerType.G:
-									placedTower = new Tower("Mikael", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.enemy);
+									placedTower = new Tower(100, TowerType.G, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.gTower);
 									break;
 								case TowerType.I:
-									placedTower = new Tower("Fredag's Café", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.pathSprite);
+									placedTower = new Tower(100, TowerType.I, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.iTower);
 									break;
 								default:
-									placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
+									placedTower = new Tower(100, TowerType.H, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.hTower);
 									break;
 							}
-							GameWorld.GameObjects.Add(placedTower);
 
+							GameWorld.GameObjects.Add(placedTower);
 						}
 					}
 				}

@@ -10,14 +10,19 @@ namespace AStarMonoGameTest
 {
     class UI : GameObject
     {
+        private TowerType towerType;
+        private Rectangle uIBounds;
+
+
         public override Rectangle UIBounds
         {
-            get { return new Rectangle((int)position.X, (int)position.Y, sprite.Width * (int)GameWorld.scale, sprite.Height * (int)GameWorld.scale); }
+            get { return new Rectangle((int)position.X, (int)position.Y, sprite.Width, sprite.Height); }
         }
 
 
-        public UI(Texture2D sprite, Vector2 position)
+        public UI(TowerType towerType, Texture2D sprite, Vector2 position)
         {
+            this.towerType = towerType;
             base.sprite = sprite;
             base.position = position;
             GameWorld.mouseHandler.leftClickEvent += OnLeftClickEvent;
@@ -36,9 +41,28 @@ namespace AStarMonoGameTest
             {
                 if (UIBounds.Contains(GameWorld.mouseHandler.PointUI))
                 {
-                    if (sprite == Asset.wall)
+
+                    if (towerType == TowerType.H)
                     {
                         GridManager.ClickType = TowerType.H;
+                        GridManager.TowerPicked = true;
+                    }
+
+                    else if (towerType == TowerType.A)
+                    {
+                        GridManager.ClickType = TowerType.A;
+                        GridManager.TowerPicked = true;
+                    }
+
+                    else if (towerType == TowerType.G)
+                    {
+                        GridManager.ClickType = TowerType.G;
+                        GridManager.TowerPicked = true;
+                    }
+
+                    else if (towerType == TowerType.I)
+                    {
+                        GridManager.ClickType = TowerType.I;
                         GridManager.TowerPicked = true;
                     }
                 }

@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace AStarMonoGameTest
 {
+    enum HealthBar { H, A, G, I }
+
     class Enemy : GameObject
     {
+        private Rectangle enemyBounds;
+        private HealthBar healthBar;
+
         //Thread enemyThread;
         private Stack<Node> path;
 
@@ -19,20 +24,34 @@ namespace AStarMonoGameTest
         private float dstX;
         private float dstY;
 
+        public Rectangle EnemyBounds { get => enemyBounds; set => enemyBounds = value; }
 
-        public Enemy(Vector2 position, Stack<Node> path)
+
+        public Enemy(Vector2 position, Stack<Node> path, HealthBar healthBar, int health)
         {
             //enemyThread = new Thread(EnemyUpdate);
+            base.health = health;
+            this.healthBar = healthBar;
             base.position = position;
             this.path = path;
             targetPosition = new Vector2(864, 864);
             speed = 100f;
-            sprite = Asset.enemy;
+            Sprite = Asset.enemy;
+            EnemyBounds = new Rectangle((int)position.X * (int)GameWorld.cellSize, (int)position.Y * (int)GameWorld.cellSize, (int)GameWorld.cellSize, (int)GameWorld.cellSize);
         }
 
 
         public override void Update(GameTime gameTime)
         {
+            Move(gameTime);
+        }
+
+
+        private void Move(GameTime gameTime)
+        {
+            deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            position += ((velocity * speed) * deltaTime);
+
 
             if (path.Count > 0)
             {
@@ -73,32 +92,25 @@ namespace AStarMonoGameTest
 
             if (dstX < 1 && dstY < 1)
             {
-
-
                 velocity = new Vector2(0, 0);
                 if (path.Count > 0)
                 {
                     path.Pop();
                 }
-
             }
-
-            //Console.WriteLine(velocity);
-            Move(gameTime);
 
             if (path.Count <= 0)
             {
                 GameWorld.Destroy(this);
             }
-
         }
 
-        private void Move(GameTime gameTime)
+
+        private void AddHealth(Enemy enemy)
         {
-            deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            position += ((velocity * speed) * deltaTime);
+            enemy.health++;
         }
 
-
+        
     }
 }

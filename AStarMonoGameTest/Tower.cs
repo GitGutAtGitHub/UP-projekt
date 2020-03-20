@@ -11,27 +11,26 @@ namespace AStarMonoGameTest
 {
     enum TowerType { H, A, G, I }
 
+
     class Tower : GameObject
     {
         #region Fields
-        private int health;
-        private int bulletSpeed;
+        private TowerType towerType;
 
-        private Rectangle towerRectangle;
+        private Rectangle towerBounds;
         #endregion
 
 
-        public Rectangle TowerRectangle { get => towerRectangle; set => towerRectangle = value; }
+        public Rectangle TowerBounds { get => towerBounds; set => towerBounds = value; }
 
 
-        public Tower(string name, int health, int bulletSpeed, int damage, Vector2 position, Texture2D sprite)
+        public Tower(int health, TowerType towerType, Vector2 position, Texture2D sprite)
         {
-            base.name = name;
-            this.bulletSpeed = bulletSpeed;
-            this.health = health;
+            this.towerType = towerType;
+            base.health = health;
             Position = position;
             Sprite = sprite;
-            TowerRectangle = new Rectangle((int)position.X * (int)GameWorld.cellSize, (int)position.Y * (int)GameWorld.cellSize, (int)GameWorld.cellSize, (int)GameWorld.cellSize);
+            TowerBounds = new Rectangle((int)position.X * (int)GameWorld.cellSize, (int)position.Y * (int)GameWorld.cellSize, (int)GameWorld.cellSize, (int)GameWorld.cellSize);
         }
 
 
@@ -42,7 +41,30 @@ namespace AStarMonoGameTest
 
         public override void Update(GameTime gameTime)
         {
+            Shoot();
+        }
 
+        public void Shoot()
+        {
+            if (towerType == TowerType.H)
+            {
+                Bullet bullet = new Bullet(BulletType.H, Asset.bulletRed);
+            }
+
+            else if (towerType == TowerType.A)
+            {
+                Bullet bullet = new Bullet(BulletType.A, Asset.bulletYellow);
+            }
+
+            else if (towerType == TowerType.G)
+            {
+                Bullet bullet = new Bullet(BulletType.G, Asset.bulletGreen);
+            }
+
+            else if (towerType == TowerType.I)
+            {
+                Bullet bullet = new Bullet(BulletType.I, Asset.bulletBlue);
+            }
         }
     }
 }

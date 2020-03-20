@@ -25,7 +25,7 @@ namespace AStarMonoGameTest
         public static float cellSize = 32 * scale;
 
         public static int cellRowCount = 10;
-        private static int wave = 1;
+        private static int wave = 0;
         private static int waveCounter;
 
         private static Stack<Node> path;
@@ -84,7 +84,10 @@ namespace AStarMonoGameTest
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Asset.LoadContent(Content);
 
-            GameObjects.Add(new UI(Asset.wall, new Vector2(11 * 96, 1 * 96)));
+            GameObjects.Add(new UI(TowerType.H, Asset.hUI, new Vector2(11 * 96, 2 * 96)));
+            GameObjects.Add(new UI(TowerType.A, Asset.aUI, new Vector2(12 * 96, 2 * 96)));
+            GameObjects.Add(new UI(TowerType.G, Asset.gUI, new Vector2(13 * 96, 2 * 96)));
+            GameObjects.Add(new UI(TowerType.I, Asset.iUI, new Vector2(14 * 96, 2 * 96)));
 
 
             foreach (GameObject gO in GameObjects)
@@ -166,7 +169,7 @@ namespace AStarMonoGameTest
             spriteBatch.Begin();
             foreach (GameObject gO in GameObjects)
             {
-                spriteBatch.DrawString(Asset.spriteFont, $"Wave: {wave}", new Vector2(11 * 96, 0 * 96), Color.DarkRed, 0, Vector2.Zero, 5, SpriteEffects.None, 0.92f);
+                spriteBatch.DrawString(Asset.spriteFont, $"Project: {wave}", new Vector2(11 * 96, 0 * 96), Color.DarkRed, 0, Vector2.Zero, 5, SpriteEffects.None, 0.92f);
                 gO.Draw(spriteBatch);
             }
             spriteBatch.End();
@@ -177,18 +180,23 @@ namespace AStarMonoGameTest
 
         public static void StartWave(GameTime gameTime)
         {
-            //hvor mange enemies der er allerede tilføjet i den nuværende wave
-            waveCounter++;
-
             //laver en sti til enemies
             path = gridManager.FindPath(gridManager.Nodes[0, 5], gridManager.Nodes[9, 5]);
+
+            if (wave == 0)
+            {
+                newObjects.Add(new Enemy(new Vector2(0 * 96, 5 * 96), path, HealthBar.H, 0));
+            }
+
+            //hvor mange enemies der er allerede tilføjet i den nuværende wave
+            waveCounter++;
 
             //så længe antallet af enemies ikke overstiger wave counter
             if (waveCounter <= wave)
             {
-                newObjects.Add(new Enemy(new Vector2(0 * 96, 5 * 96), path));
-
+                newObjects.Add(new Enemy(new Vector2(0 * 96, 5 * 96), path, HealthBar.H, 0));
             }
+
             else
             {
                 //if the number of enemies equals the wavenumber

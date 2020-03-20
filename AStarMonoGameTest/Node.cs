@@ -14,7 +14,7 @@ namespace AStarMonoGameTest
     class Node : GameObject
     {
         #region Fields
-        private Rectangle nodeRectangle;
+        private Rectangle nodeBounds;
 
         private bool discovered;/* = false;*/
         public bool walkable;/* = true;*/
@@ -30,7 +30,7 @@ namespace AStarMonoGameTest
 
 
         #region Properties
-        public Rectangle NodeRectangle { get => nodeRectangle; set => nodeRectangle = value; }
+        public Rectangle NodeBounds { get => nodeBounds; set => nodeBounds = value; }
         public bool Discovered { get => discovered; set => discovered = value; }
         public Node Parent { get => parent; set => parent = value; }
         public int GCost { get => gCost; set => gCost = value; }
@@ -45,7 +45,7 @@ namespace AStarMonoGameTest
             this.type = type;
             this.walkable = walkable;
             this.containsTower = containsTower;
-            NodeRectangle = new Rectangle((int)position.X * (int)GameWorld.cellSize, (int)position.Y * (int)GameWorld.cellSize, (int)GameWorld.cellSize, (int)GameWorld.cellSize);
+            NodeBounds = new Rectangle((int)position.X * (int)GameWorld.cellSize, (int)position.Y * (int)GameWorld.cellSize, (int)GameWorld.cellSize, (int)GameWorld.cellSize);
         }
 
 
@@ -89,8 +89,6 @@ namespace AStarMonoGameTest
             spriteBatch.DrawString(Asset.spriteFont, $"G: {gCost}", new Vector2((Position.X + 5), (Position.Y)), Color.DarkRed, 0, Vector2.Zero, 1, SpriteEffects.None, 0.92f);
             spriteBatch.DrawString(Asset.spriteFont, $"H: {hCost}", new Vector2((Position.X + 5), (Position.Y + (Sprite.Height * GameWorld.scale / 1.3f))), Color.DarkBlue, 0, Vector2.Zero, 1, SpriteEffects.None, 0.92f);
             spriteBatch.DrawString(Asset.spriteFont, $"F: {FCost}", new Vector2((Position.X + Sprite.Width * GameWorld.scale / 1.5f), (Position.Y + (Sprite.Height * GameWorld.scale / 1.3f))), Color.DarkGreen, 0, Vector2.Zero, 1, SpriteEffects.None, 0.92f);
-
-
         }
 
         public override void Update(GameTime gameTime)

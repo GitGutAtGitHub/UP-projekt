@@ -22,6 +22,9 @@ namespace AStarMonoGameTest
         protected Vector2 velocity;
 
         protected float speed;
+
+        protected int health;
+
         #endregion
 
 
@@ -33,7 +36,7 @@ namespace AStarMonoGameTest
         {
             get { return new Rectangle((int)position.X, (int)position.Y, sprite.Width * (int)GameWorld.scale, sprite.Height * (int)GameWorld.scale); }
         }
-        #endregion
+        #endregion 
 
 
         public virtual void LoadContent(ContentManager content)
@@ -50,7 +53,7 @@ namespace AStarMonoGameTest
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(Sprite, Position, null, Color.White, 0, new Vector2(0, 0), GameWorld.scale, SpriteEffects.None, 1);
+            spriteBatch.Draw(Sprite, Position, null, Color.White, 0, new Vector2(0, 0), 1, SpriteEffects.None, 1);
         }
     }
 }
