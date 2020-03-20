@@ -25,7 +25,7 @@ namespace AStarMonoGameTest
         public static float cellSize = 32 * scale;
 
         public static int cellRowCount = 10;
-        private static int wave = 1;
+        private static int wave = 0;
         private static int waveCounter;
 
         private static Stack<Node> path;
@@ -36,6 +36,7 @@ namespace AStarMonoGameTest
 
         private static bool startWave;
         public static int projectsDone;
+        public static int resources = 20;
         public static int failedProjects;
         #endregion
 
@@ -171,6 +172,7 @@ namespace AStarMonoGameTest
                 spriteBatch.DrawString(Asset.spriteFont, $"Wave: {wave}", new Vector2(11 * 96, 0 * 96), Color.DarkRed, 0, Vector2.Zero, 5, SpriteEffects.None, 0.92f);
                 spriteBatch.DrawString(Asset.spriteFont, $"Failed projects: {failedProjects}", new Vector2(11 * 96, 2 * 96), Color.DarkRed, 0, Vector2.Zero, 3, SpriteEffects.None, 0.92f);
                 spriteBatch.DrawString(Asset.spriteFont, $"Projects done: {projectsDone}", new Vector2(11 * 96, 3 * 96), Color.DarkRed, 0, Vector2.Zero, 3, SpriteEffects.None, 0.92f);
+                spriteBatch.DrawString(Asset.spriteFont, $"Resources : {resources}", new Vector2(11 * 96, 4 * 96), Color.DarkRed, 0, Vector2.Zero, 3, SpriteEffects.None, 0.92f);
                 gO.Draw(spriteBatch);
             }
             spriteBatch.End();
@@ -188,7 +190,7 @@ namespace AStarMonoGameTest
             path = gridManager.FindPath(gridManager.Nodes[0, 5], gridManager.Nodes[9, 5]);
 
             //så længe antallet af enemies ikke overstiger wave counter
-            if (waveCounter <= wave)
+            if (waveCounter <= wave+1)
             {
                 newObjects.Add(new Enemy(new Vector2(0 * 96, 5 * 96), path));
 

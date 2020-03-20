@@ -174,8 +174,12 @@ namespace AStarMonoGameTest
                 GameWorld.Destroy(this);
                 // The players gets a point for each finished project.
                 GameWorld.projectsDone += 1;
+                // Resources are gained for every successful project.
+                GameWorld.resources += 1;
             }
         }
+
+        
 
 
         public override void Draw(SpriteBatch spriteBatch)

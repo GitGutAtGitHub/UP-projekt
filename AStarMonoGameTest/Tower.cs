@@ -32,6 +32,7 @@ namespace AStarMonoGameTest
             Position = position;
             Sprite = sprite;
             TowerRectangle = new Rectangle((int)position.X * (int)GameWorld.cellSize, (int)position.Y * (int)GameWorld.cellSize, (int)GameWorld.cellSize, (int)GameWorld.cellSize);
+            GameWorld.resources -= 5;
         }
 
 

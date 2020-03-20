@@ -280,27 +280,28 @@ namespace AStarMonoGameTest
 						{
 							tmp.containsTower = true;
 							Tower placedTower;
-
-							switch (clickType)
-							{
-								case TowerType.H:
-									placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
-									break;
-								case TowerType.A:
-									placedTower = new Tower("Milo", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.start);
-									break;
-								case TowerType.G:
-									placedTower = new Tower("Mikael", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.enemy);
-									break;
-								case TowerType.I:
-									placedTower = new Tower("Fredag's Café", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.pathSprite);
-									break;
-								default:
-									placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
-									break;
-							}
-							GameWorld.GameObjects.Add(placedTower);
-
+							if(GameWorld.resources >= 5)
+                            {
+                                switch (clickType)
+                                {
+                                    case TowerType.H:
+                                        placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
+                                        break;
+                                    case TowerType.A:
+                                        placedTower = new Tower("Milo", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.start);
+                                        break;
+                                    case TowerType.G:
+                                        placedTower = new Tower("Mikael", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.enemy);
+                                        break;
+                                    case TowerType.I:
+                                        placedTower = new Tower("Fredag's Café", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.pathSprite);
+                                        break;
+                                    default:
+                                        placedTower = new Tower("Sheena", 100, 1, 1, new Vector2(tmpPoint.X * cellSize, tmpPoint.Y * cellSize), Asset.wall);
+                                        break;
+                                }
+                                GameWorld.GameObjects.Add(placedTower);
+                            }
 						}
 					}
 				}

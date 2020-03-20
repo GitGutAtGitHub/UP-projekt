@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/healthbarSprite.png</SourceFile>
-  <SourceTime>2020-03-19T13:32:36.718166+01:00</SourceTime>
+  <SourceTime>2020-03-20T13:15:42.0459984+01:00</SourceTime>
   <DestFile>C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/healthbarSprite.xnb</DestFile>
-  <DestTime>2020-03-20T13:09:27.5140256+01:00</DestTime>
+  <DestTime>2020-03-20T13:23:38.7636577+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
