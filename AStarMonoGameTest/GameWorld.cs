@@ -35,6 +35,8 @@ namespace AStarMonoGameTest
         private static TimeSpan timer;
 
         private static bool startWave;
+        public static int projectsDone;
+        public static int failedProjects;
         #endregion
 
 
@@ -167,6 +169,8 @@ namespace AStarMonoGameTest
             foreach (GameObject gO in GameObjects)
             {
                 spriteBatch.DrawString(Asset.spriteFont, $"Wave: {wave}", new Vector2(11 * 96, 0 * 96), Color.DarkRed, 0, Vector2.Zero, 5, SpriteEffects.None, 0.92f);
+                spriteBatch.DrawString(Asset.spriteFont, $"Failed projects: {failedProjects}", new Vector2(11 * 96, 2 * 96), Color.DarkRed, 0, Vector2.Zero, 3, SpriteEffects.None, 0.92f);
+                spriteBatch.DrawString(Asset.spriteFont, $"Projects done: {projectsDone}", new Vector2(11 * 96, 3 * 96), Color.DarkRed, 0, Vector2.Zero, 3, SpriteEffects.None, 0.92f);
                 gO.Draw(spriteBatch);
             }
             spriteBatch.End();

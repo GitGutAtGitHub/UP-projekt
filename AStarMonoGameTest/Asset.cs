@@ -16,6 +16,7 @@ namespace AStarMonoGameTest
         public static Texture2D enemy;
         public static Texture2D pathSprite;
         public static SpriteFont spriteFont;
+        public static Texture2D healthbarSprite;
 
 
         public static void LoadContent(ContentManager content)
@@ -26,6 +27,7 @@ namespace AStarMonoGameTest
             enemy = content.Load<Texture2D>("TileEnemy");
             pathSprite = content.Load<Texture2D>("TilePath");
             spriteFont = content.Load<SpriteFont>("info");
+            healthbarSprite = content.Load<Texture2D>("healthbarSprite");
             //hTower;
             //aTower;
             //gTower;
