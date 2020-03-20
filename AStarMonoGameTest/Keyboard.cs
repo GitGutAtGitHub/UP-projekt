@@ -29,7 +29,6 @@ namespace AStarMonoGameTest
             return currentKeyState.IsKeyDown(key);
         }
 
-
         ///// <summary>
         ///// Checks if key is being pressed (It triggers once)
         ///// </summary>

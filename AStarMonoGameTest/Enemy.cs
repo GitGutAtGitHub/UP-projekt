@@ -6,13 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace AStarMonoGameTest
 {
     class Enemy : GameObject
     {
         #region fields
+        //Thread enemyThread;
         private Stack<Node> path;
         Vector2 targetPosition;
         protected float deltaTime;
@@ -69,7 +71,7 @@ namespace AStarMonoGameTest
         public override void Update(GameTime gameTime)
         {
             HealthbarHandler();
-            CursedDamagde();
+            //CursedDamagde();
             Move(gameTime);
 
         }
@@ -174,12 +176,8 @@ namespace AStarMonoGameTest
                 GameWorld.Destroy(this);
                 // The players gets a point for each finished project.
                 GameWorld.projectsDone += 1;
-                // Resources are gained for every successful project.
-                GameWorld.resources += 1;
             }
         }
-
-        
 
 
         public override void Draw(SpriteBatch spriteBatch)

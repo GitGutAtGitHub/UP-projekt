@@ -1,6 +1,1 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/Tile.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/Tile.xnb","TextureProcessor","Texture2DContent",1664,4181,0,0807665
-"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileEnemy.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileEnemy.xnb","TextureProcessor","Texture2DContent",2594,4181,0,0049879
-"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TilePath.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TilePath.xnb","TextureProcessor","Texture2DContent",3010,4181,0,0039894
-"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileStart.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileStart.xnb","TextureProcessor","Texture2DContent",1936,4181,0,0070082
-"C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/TileWall.png","C:/Users/Henrik/Documents/GitHub/UP-projekt/AStarMonoGameTest/Content/bin/Windows/Content/TileWall.xnb","TextureProcessor","Texture2DContent",1989,4181,0,0049594

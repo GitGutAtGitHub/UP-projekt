@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace AStarMonoGameTest
 {
-    public static class Asset
-    {
+	public static class Asset
+	{
         public static Texture2D tile;
         public static Texture2D start;
         public static Texture2D wall;
         public static Texture2D enemy;
         public static Texture2D pathSprite;
-        public static SpriteFont spriteFont;
         public static Texture2D healthbarSprite;
 
+        public static SpriteFont spriteFont;
 
         public static void LoadContent(ContentManager content)
         {
@@ -26,12 +26,9 @@ namespace AStarMonoGameTest
             start = content.Load<Texture2D>("TileStart");
             enemy = content.Load<Texture2D>("TileEnemy");
             pathSprite = content.Load<Texture2D>("TilePath");
-            spriteFont = content.Load<SpriteFont>("info");
             healthbarSprite = content.Load<Texture2D>("healthbarSprite");
-            //hTower;
-            //aTower;
-            //gTower;
-            //iTower;
+
+            spriteFont = content.Load<SpriteFont>("info");
         }
     }
 }
